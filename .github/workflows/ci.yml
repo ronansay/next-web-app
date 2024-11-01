@@ -17,7 +17,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
          name: static-site
-         path: /next-web-app
+         path: ./
   release-project:
     name: Release Project
     runs-on: ubuntu-latest
