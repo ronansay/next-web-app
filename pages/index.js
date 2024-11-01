@@ -42,10 +42,13 @@ const getLocation = (location) =>
                 {location.mailingAddress}
             </small>
         </p>
-        <Link href="/locations/[id]" as={`/locations/${location.id}`}>
-            <a className="btn btn-secondary">
+        <Link
+            href="/locations/[id]"
+            as={`/locations/${location.id}`}
+            className="btn btn-secondary">
+            
                 Learn more
-            </a>
+            
         </Link>
     </div>;  
 

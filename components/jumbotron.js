@@ -30,7 +30,7 @@ const Jumbotron = () =>
                     Transform the way you work, meet clients and collaborate with an inspiring and unique office experience.
                 </p>
                 <hr className="my-4" />
-                <Link href="/locations">
+                <Link href="/locations" legacyBehavior>
                     <a className="btn btn-primary btn-lg" role="button">Explore our locations</a>                
                 </Link>
             </div>
