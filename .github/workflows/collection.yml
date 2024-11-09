@@ -1,0 +1,69 @@
+name: Unit Test Contoso Next.js Web Application
+on: 
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-UnitTest:
+    timeout-minutes: 120
+    name: Build Unit Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Install NPM Dependencies
+      run: npm install
+    - name: Install newman
+      run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+          npm i newman-reporter-csv    
+    - name:  Build Project
+      run: npm run dev
+    - name: Run Unit Tests
+      working-directory: ./postman
+      run: node postmanCollection.js 
+    - name: Contoso API Report- Unit Test
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: Contoso-API-Unit-Test
+        path: postman/newman
+        retention-days: 1
+  
+  release-project:
+    name: Release Project
+    runs-on: ubuntu-latest
+    needs: build-UnitTest
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+         name: Contoso-API-Unit-Test
+    - name: Test artifact download
+      run: ls -R
+    - name: Archive site content
+      uses: thedoctor0/zip-release@main
+      with:
+        filename: site.zip
+    - name: Create GitHub Release
+      id: create-new-release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.run_number }}
+        release_name: Release ${{ github.run_number }}
+    - name: Uploade release assets
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create-new-release.outputs.upload_url }}
+        asset_path: ./site.zip
+        asset_name: site-v${{ github.run_number }}.zip
+        asset_content_type: application/zip
+        retention-days: 1
+  
+
+      
