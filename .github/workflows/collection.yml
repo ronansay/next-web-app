@@ -1,0 +1,43 @@
+name: Build Test Release Next.js Web Application
+on: 
+  workflow_dispatch:
+
+jobs:
+  build-UnitTest:
+    name: Build Unit Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Install NPM Dependencies
+      run: npm install
+    - name: Build Run Cypress Unit Test
+      uses: cypress-io/github-action@v6
+      with:
+          start: npm run dev
+          start-windows: npm run start:windows:server
+          # quote the url to be safe against YML parsing surprises
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120
+          spec: |
+            cypress/e2e/UNIT_TEST_UI/*.js
+          record: false
+    - name: Install Node
+      uses: actions/setup-node@v4
+      with:
+              node-version: "20.x"
+    - name: Install newman
+      run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+          npm i newman-reporter-csv
+    - name:  Build Project Run Unit Test    
+      working-directory: ./postman
+      run: node postmanCollection.js
+    - name: Contoso API Report- Unit Test
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: Contoso-API-Unit-Test
+        path: postman/newman
+        retention-days: 1
