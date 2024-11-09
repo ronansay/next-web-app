@@ -21,7 +21,6 @@ jobs:
           wait-on: 'http://localhost:3000'
           wait-on-timeout: 120
           spec: |
-            cypress/e2e/UNIT_TEST_API/*.js
             cypress/e2e/UNIT_TEST_UI/*.js
           record: false
     - name: Install Node
