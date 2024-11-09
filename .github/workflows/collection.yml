@@ -1,7 +1,6 @@
 name: Build Test Release Next.js Web Application
 on: 
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-UnitTest:

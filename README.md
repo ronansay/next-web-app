@@ -18,6 +18,8 @@ Cypress is a next generation front end testing tool built for the modern web. Th
 2.Run Cypress Unit test:
  npx cypress run --spec cypress/e2e/UNIT_TEST_API
  npx cypress run --spec cypress/e2e/UNIT_TEST_UI
+3. Added collection file for unit tests- can be executed from folder postman:
+ node postmanCollection.js
 ### DEPLOY NEXT JS APP 
 
 ### E2E NEXT JS APP Using Cypress
@@ -26,6 +28,7 @@ Cypress is a next generation front end testing tool built for the modern web. Th
 3.Run Cypress E2E test-npx cypress run
  npx cypress run --spec cypress/e2e/E2E_TEST_API
  npx cypress run --spec cypress/e2e/E2E_TEST_UI
+
 
 ### TEST IN Cypress
 ### E2E_TEST_API/ UNIT_TEST_API

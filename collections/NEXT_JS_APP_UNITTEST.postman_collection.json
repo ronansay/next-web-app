@@ -12321,7 +12321,8 @@
 					{
 						"key": "Connection",
 						"value": "keep-alive",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"url": {
