@@ -30,6 +30,8 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
+    - name: Install NPM Dependencies
+      run: npm install
     - name: Build Run 
       run: npm run dev
     - name: Setup K6
