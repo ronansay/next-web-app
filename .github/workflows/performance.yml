@@ -1,11 +1,10 @@
 name: Performance Test Next.js Web Application
 on: 
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-UnitTest:
-    name: Build Unit Test
+    name: Build Unit and Performance Test
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
