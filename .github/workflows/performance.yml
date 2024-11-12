@@ -34,11 +34,10 @@ jobs:
       run: npm install
     - name: Setup K6
       uses: grafana/setup-k6-action@v1
-    - name: Build and Run Performance Test
-      uses: grafana/run-k6-action@v1
-      with:
-          path: |
-            performanceTest_K6/*.js
+    - name: Build and Run Performance Test 1
+      run: k6 run index.js
+    - name: Build and Run Performance Test 2
+      run: k6 run location.js
     - name: Upload performanceTest Report
       uses: actions/upload-artifact@v3
       if: always()
