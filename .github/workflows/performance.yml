@@ -1,0 +1,37 @@
+name: Performance Test Next.js Web Application
+on: 
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Performance-Test:
+    name: Build Performance-Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Install NPM Dependencies
+      run: npm install
+    - name: Setup K6
+      uses: grafana/setup-k6-action@v1
+    - name: Build and Run Performance Test
+      uses: grafana/run-k6-action@v1
+      with:
+          start: npm run dev
+          start-windows: npm run start:windows:server
+          # quote the url to be safe against YML parsing surprises
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120
+          path: |
+            performanceTest_K6/*.js
+    - name: Upload performanceTest Report
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: performanceTest-report-summary
+        path: performanceTest.html
+        retention-days: 1
+  
+  
+
+      
