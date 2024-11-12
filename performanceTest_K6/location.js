@@ -27,9 +27,9 @@ const url ="http://localhost:3000/_next/data/development/locations.json"
 export default function () {
 
     const response = http.get(url,params)
-    let jsonData = response.json();
-    const data = jsonData.pageProps.locationGroups;
-    const count = data.length;
+    //let jsonData = response.json();
+    //const data = jsonData.pageProps.locationGroups;
+    //const count = data.length;
     check(response, {
         'status code validation': (response) => response.status === 200,
         'Response Id Validation': (response) => response.body.includes('locationGroups'),
