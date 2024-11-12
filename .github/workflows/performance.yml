@@ -1,0 +1,43 @@
+name: Performance Test Next.js Web Application
+on: 
+  workflow_dispatch:
+
+jobs:
+  build-UnitTest:
+    name: Build Unit and Performance Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Install NPM Dependencies
+      run: npm install
+    - name: Build Run Cypress Unit Test
+      uses: cypress-io/github-action@v6
+      with:
+          start: npm run dev
+          start-windows: npm run start:windows:server
+          # quote the url to be safe against YML parsing surprises
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120
+          spec: |
+            cypress/e2e/UNIT_TEST_UI/*.js
+          record: false
+    - name: Setup K6
+      uses: grafana/setup-k6-action@v1
+    - name: Build and Run Performance Test 1
+      working-directory: ./performanceTest_K6
+      run: k6 run index.js
+    - name: Build and Run Performance Test 2
+      working-directory: ./performanceTest_K6
+      run: k6 run location.js
+    - name: Upload performanceTest Report
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: performanceTest-report-summary
+        path: performanceTest.html
+        retention-days: 1
+  
+  
+
+      
