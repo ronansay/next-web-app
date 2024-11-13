@@ -32,11 +32,11 @@ export default function () {
     //const count = data.length;
     check(response, {
         'status code validation': (response) => response.status === 200,
-        'Response Id Validation': (response) => response.body.includes('locationGroups'),
-        'Response Id locations1': (response) => response.body.includes('mcglynn-kunze-square'),
-        'Response Id locations2': (response) => response.body.includes('schoen-rau-and-windler-square'),
-        'Response Id locations3': (response) => response.body.includes('kuhlman-ankunding-and-howe-square'),
-        'Response Id locations4': (response) => response.body.includes('goyette-luettgen-plaza'),
+        'Response Id Validation':  response.body.includes('locationGroups'),
+        'Response Id locations1':  response.body.includes('mcglynn-kunze-square'),
+        'Response Id locations2':  response.body.includes('schoen-rau-and-windler-square'),
+        'Response Id locations3':  response.body.includes('kuhlman-ankunding-and-howe-square'),
+        'Response Id locations4':  response.body.includes('goyette-luettgen-plaza'),
         //'Response  Validation': (response) => response.body.data.length == 2,
         
     })
