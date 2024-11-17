@@ -1,196 +1,196 @@
 {
-    "locations": [
-      {
-        "name": "McGlynn Kunze Square",
-        "id": "mcglynn-kunze-square"
-      },
-      {
-        "name": "Schoen, Rau and Windler Square",
-        "id": "schoen-rau-and-windler-square"
-      },
-      {
-        "name": "Cronin Group Plaza",
-        "id": "cronin-group-plaza"
-      },
-      {
-        "name": "Kuhlman, Ankunding and Howe Square",
-        "id": "kuhlman-ankunding-and-howe-square"
-      },
-      {
-        "name": "Gutkowski Inc Building",
-        "id": "gutkowski-inc-building"
-      },
-      {
-        "name": "Stamm Heidenreich Complex",
-        "id": "stamm-heidenreich-complex"
-      },
-      {
-        "name": "Goyette Luettgen Plaza",
-        "id": "goyette-luettgen-plaza"
-      },
-      {
-        "name": "Sipes Group Complex",
-        "id": "sipes-group-complex"
-      },
-      {
-        "name": "Reichert Luettgen Complex",
-        "id": "reichert-luettgen-complex"
-      },
-      {
-        "name": "Bosco Moen and Hand Center",
-        "id": "bosco-moen-and-hand-center"
-      },
-      {
-        "name": "Turcotte Carroll and Hermiston Square",
-        "id": "turcotte-carroll-and-hermiston-square"
-      },
-      {
-        "name": "Ziemann and Sons Plaza",
-        "id": "ziemann-and-sons-plaza"
-      },
-      {
-        "name": "Lehner kuhic complex",
-        "id": "lehner-kuhic-complex"
-      },
-      {
-        "name": "Thiel kreiger and gleichner square",
-        "id": "thiel-kreiger-and-gleichner-square"
-      },
-      {
-        "name": "Waelchi inc complex",
-        "id": "waelchi-inc-complex"
-      },
-      {
-        "name": "Bashirian williamson center",
-        "id": "bashirian-williamson-center"
-      },
-      {
-        "name": "Weissnat smitham and waters square",
-        "id": "weissnat-smitham-and-waters-square"
-      },
-      {
-        "name": "Gorczany abbott complex",
-        "id": "gorczany-abbott-complex"
-      },
-      {
-        "name": "Kilback Lueilwitz and kiehn complex",
-        "id": "kilback-lueilwitz-and-kiehn-complex"
-      },
-      {
-        "name": "Carter gaylord building",
-        "id": "carter-gaylord-building"
-      },
-      {
-        "name": "Morissette wunsch and boyle square",
-        "id": "morissette-wunsch-and-boyle-square"
-      },
-      {
-        "name": "Bahringer inc complex",
-        "id": "bahringer-inc-complex"
-      },
-      {
-        "name": "Schimmel steuber complex",
-        "id": "schimmel-steuber-complex"
-      },
-      {
-        "name": "Langosh and sons complex",
-        "id": "langosh-and-sons-complex"
-      },
-      {
-        "name": "Schinner and sons building",
-        "id": "schinner-and-sons-building"
-      },
-      {
-        "name": "Murphy thiel and morar-plaza",
-        "id": "murphy-thiel-and-morar-plaza"
-      },
-      {
-        "name": "Wolff douglas and hagenes square",
-        "id": "wolff-douglas-and-hagenes-square"
-      },
-      {
-        "name": "Wunsch llc center",
-        "id": "wunsch-llc-center"
-      },
-      {
-        "name": "Schuster inc building",
-        "id": "schuster-inc-building"
-      },
-      {
-        "name": "Champlin bauch square",
-        "id": "champlin-bauch-square"
-      },
-      {
-        "name": "Watsica parisian complex",
-        "id": "watsica-parisian-complex"
-      },
-      {
-        "name": "Hammes welch squarea",
-        "id": "hammes-welch-square"
-      },
-      {
-        "name": "Mertz group square",
-        "id": "mertz-group-square"
-      },
-      {
-        "name": "Daniel mcdermott and douglas square",
-        "id": "daniel-mcdermott-and-douglas-square"
-      },
-      {
-        "name": "Mayer dare complex",
-        "id": "mayer-dare-complex"
-      },
-      {
-        "name": "Turner schoen and bogisich center",
-        "id": "turner-schoen-and-bogisich-center"
-      },
-      {
-        "name": "Wiza quitzon and moen complex",
-        "id": "wiza-quitzon-and-moen-complex"
-      },
-      {
-        "name": "Buckridge llc square",
-        "id": "buckridge-llc-square"
-      },
-      {
-        "name": "Friesen and sons square",
-        "id": "friesen-and-sons-square"
-      },
-      {
-        "name": "Glover schaden and senger center",
-        "id": "glover-schaden-and-senger-center"
-      },
-      {
-        "name": "Spencer and sons center",
-        "id": "spencer-and-sons-center"
-      },
-      {
-        "name": "Stanton stoltenberg square",
-        "id": "stanton-stoltenberg-square"
-      },
-      {
-        "name": "Heidenreich hills building",
-        "id": "heidenreich-hills-building"
-      },
-      {
-        "name": "Kreiger langworth square",
-        "id": "kreiger-langworth-square"
-      },
-      {
-        "name": "Legros group square",
-        "id": "legros-group-square"
-      },
-      {
-        "name": "Mills inc building",
-        "id": "mills-inc-building"
-      },
-      {
-        "name": "Stiedemann and sons building",
-        "id": "stiedemann-and-sons-building"
-      },
-      {
-        "name": "Feil mcclure and daugherty building",
-        "id": "feil-mcclure-and-daugherty-building"
-      }
-    ]
-  }
+  "locations": [
+    {
+      "name": "McGlynn - Kunze Square",
+      "id": "mcglynn-kunze-square"
+    },
+    {
+      "name": "Schoen, Rau and Windler Square",
+      "id": "schoen-rau-and-windler-square"
+    },
+    {
+      "name": "Cronin Group Plaza",
+      "id": "cronin-group-plaza"
+    },
+    {
+      "name": "Kuhlman, Ankunding and Howe Square",
+      "id": "kuhlman-ankunding-and-howe-square"
+    },
+    {
+      "name": "Gutkowski Inc Building",
+      "id": "gutkowski-inc-building"
+    },
+    {
+      "name": "Stamm - Heidenreich Complex",
+      "id": "stamm-heidenreich-complex"
+    },
+    {
+      "name": "Goyette - Luettgen Plaza",
+      "id": "goyette-luettgen-plaza"
+    },
+    {
+      "name": "Sipes Group Complex",
+      "id": "sipes-group-complex"
+    },
+    {
+      "name": "Reichert - Luettgen Complex",
+      "id": "reichert-luettgen-complex"
+    },
+    {
+      "name": "Bosco, Moen and Hand Center",
+      "id": "bosco-moen-and-hand-center"
+    },
+    {
+      "name": "Turcotte, Carroll and Hermiston Square",
+      "id": "turcotte-carroll-and-hermiston-square"
+    },
+    {
+      "name": "Ziemann and Sons Plaza",
+      "id": "ziemann-and-sons-plaza"
+    },
+    {
+      "name": "Lehner - Kuhic Complex",
+      "id": "lehner-kuhic-complex"
+    },
+    {
+      "name": "Thiel, Kreiger and Gleichner Square",
+      "id": "thiel-kreiger-and-gleichner-square"
+    },
+    {
+      "name": "Waelchi Inc Complex",
+      "id": "waelchi-inc-complex"
+    },
+    {
+      "name": "Bashirian - Williamson Center",
+      "id": "bashirian-williamson-center"
+    },
+    {
+      "name": "Weissnat, Smitham and Waters Square",
+      "id": "weissnat-smitham-and-waters-square"
+    },
+    {
+      "name": "Gorczany - Abbott Complex",
+      "id": "gorczany-abbott-complex"
+    },
+    {
+      "name": "Kilback, Lueilwitz and Kiehn Complex",
+      "id": "kilback-lueilwitz-and-kiehn-complex"
+    },
+    {
+      "name": "Carter - Gaylord Building",
+      "id": "carter-gaylord-building"
+    },
+    {
+      "name": "Morissette, Wunsch and Boyle Square",
+      "id": "morissette-wunsch-and-boyle-square"
+    },
+    {
+      "name": "Bahringer Inc Complex",
+      "id": "bahringer-inc-complex"
+    },
+    {
+      "name": "Schimmel - Steuber Complex",
+      "id": "schimmel-steuber-complex"
+    },
+    {
+      "name": "Langosh and Sons Complex",
+      "id": "langosh-and-sons-complex"
+    },
+    {
+      "name": "Schinner and Sons Building",
+      "id": "schinner-and-sons-building"
+    },
+    {
+      "name": "Murphy, Thiel and Morar Plaza",
+      "id": "murphy-thiel-and-morar-plaza"
+    },
+    {
+      "name": "Wolff, Douglas and Hagenes Square",
+      "id": "wolff-douglas-and-hagenes-square"
+    },
+    {
+      "name": "Wunsch LLC Center",
+      "id": "wunsch-llc-center"
+    },
+    {
+      "name": "Schuster Inc Building",
+      "id": "schuster-inc-building"
+    },
+    {
+      "name": "Champlin - Bauch Square",
+      "id": "champlin-bauch-square"
+    },
+    {
+      "name": "Watsica - Parisian Complex",
+      "id": "watsica-parisian-complex"
+    },
+    {
+      "name": "Hammes - Welch Square",
+      "id": "hammes-welch-square"
+    },
+    {
+      "name": "Mertz Group Square",
+      "id": "mertz-group-square"
+    },
+    {
+      "name": "Daniel, McDermott and Douglas Square",
+      "id": "daniel-mcdermott-and-douglas-square"
+    },
+    {
+      "name": "Mayer - Dare Complex",
+      "id": "mayer-dare-complex"
+    },
+    {
+      "name": "Turner, Schoen and Bogisich Center",
+      "id": "turner-schoen-and-bogisich-center"
+    },
+    {
+      "name": "Wiza, Quitzon and Moen Complex",
+      "id": "wiza-quitzon-and-moen-complex"
+    },
+    {
+      "name": "Buckridge LLC Square",
+      "id": "buckridge-llc-square"
+    },
+    {
+      "name": "Friesen and Sons Square",
+      "id": "friesen-and-sons-square"
+    },
+    {
+      "name": "Glover, Schaden and Senger Center",
+      "id": "glover-schaden-and-senger-center"
+    },
+    {
+      "name": "Spencer and Sons Center",
+      "id": "spencer-and-sons-center"
+    },
+    {
+      "name": "Stanton - Stoltenberg Square",
+      "id": "stanton-stoltenberg-square"
+    },
+    {
+      "name": "Heidenreich - Hills Building",
+      "id": "heidenreich-hills-building"
+    },
+    {
+      "name": "Kreiger - Langworth Square",
+      "id": "kreiger-langworth-square"
+    },
+    {
+      "name": "Legros Group Square",
+      "id": "legros-group-square"
+    },
+    {
+      "name": "Mills Inc Building",
+      "id": "mills-inc-building"
+    },
+    {
+      "name": "Stiedemann and Sons Building",
+      "id": "stiedemann-and-sons-building"
+    },
+    {
+      "name": "Feil, McClure and Daugherty Building",
+      "id": "feil-mcclure-and-daugherty-building"
+    }
+  ]
+}

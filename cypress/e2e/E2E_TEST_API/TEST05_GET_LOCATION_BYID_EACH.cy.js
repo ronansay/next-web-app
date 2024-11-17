@@ -23,6 +23,7 @@ describe('Locations APIs BY ID', () => {
                     }).then((response) => {
                         expect(response.status).to.eq(200)
                         expect(response.body.pageProps.location.id).to.not.be.null
+                        expect(response.body.pageProps.location.name).to.be.eq(data.name);
                         Cypress._.each(response.body.pageProps.location.rooms, (rooms) => {
                             expect(rooms).to.have.all.keys(
                                 'description', 'monthlyRate', 'seats', 'privateFacilities', 'phoneIncluded', 'windows', 'corner')
