@@ -1,4 +1,4 @@
-name: Build Test Release Next.js Web Application
+name: Unit Test using Postman Collection
 on: 
   workflow_dispatch:
 
