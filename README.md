@@ -42,5 +42,7 @@ Cypress is a next generation front end testing tool built for the modern web. Th
 1. TEST01_VERIFYLOCATIONS
 2. TEST02_HOMENAVIGATION
 
+### Peformance Test Using k6
+1. performanceTest_K6
 
 
