@@ -4,7 +4,7 @@ const newman = require('newman'); // require newman in your project
 //execute- node postmanCollection.js
 newman.run({
     collection: require('../collections/NEXT_JS_APP_UNITTEST.postman_collection.json'),
-    reporters: ['cli', 'csv']
+    reporters: ['cli', 'csv','htmlextra']
 }, function (err) {
 	if (err) { throw err; }
     console.log('collection run complete!');
