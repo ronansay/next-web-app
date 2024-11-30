@@ -1,0 +1,40 @@
+name: Accessibility Test
+on: 
+  workflow_dispatch:
+
+jobs:
+  build-UnitTest:
+    name: Build Accessibility Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Install NPM Dependencies
+      run: npm install
+    - name: Build Run Cypress Unit Test
+      uses: cypress-io/github-action@v6
+      with:
+          start: npm run dev
+          start-windows: npm run start:windows:server
+          # quote the url to be safe against YML parsing surprises
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120
+          spec: |
+            cypress/e2e/AccessibilityTest/*.js
+          record: false
+    - name: Cypress Accessibility Screenshot
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+            name: Accessibility Screenshot
+            path: cypress/screenshots/accessibilityTest.cy.js/*.png
+            retention-days: 1
+    - name: Cypress Accessibility Report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: cypress-accessibility
+        path: cypress/accessibility/*/*.html
+        retention-days: 1
+
+      
