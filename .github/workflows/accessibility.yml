@@ -34,7 +34,7 @@ jobs:
       if: always()
       with:
         name: cypress-accessibility
-        path: cypress/accessibility/*./*.html
+        path: cypress/accessibility/*/*.html
         retention-days: 1
 
       
