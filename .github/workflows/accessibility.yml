@@ -5,7 +5,7 @@ on:
 
 jobs:
   build-UnitTest:
-    name: Build Unit Test
+    name: Build Accessibility Test
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
@@ -35,7 +35,7 @@ jobs:
       if: always()
       with:
         name: cypress-accessibility
-        path: ../../../Accessibility Report.html
+        path: ./././Accessibility Report.html
         retention-days: 1
 
       
