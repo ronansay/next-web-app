@@ -1,4 +1,8 @@
-### what does this PR do?
+### Description
+
+Please include a summary of the change and which issue is fixed.
+
+### What was solved in PR .what does this PR do?
 
 ### Fixes (type of issue):
 
@@ -8,9 +12,6 @@
 -New Feature:
 -Breaking Change:
 -This change require documentation updates:
-
-### What was solved in PR
-
 
 ### How was it solved
 
