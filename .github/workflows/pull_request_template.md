@@ -1,17 +1,19 @@
 ### Description
 
-Please include a summary of the change and which issue is fixed.
+1. Please include a summary of the change and which issue is fixed.
 
-### What was solved in PR .what does this PR do?
+### What was solved in PR. what does this PR do?
+
 
 ### Fixes (type of issue):
 
+
 ### Type Of Change:
 
--Bug Fix:
--New Feature:
--Breaking Change:
--This change require documentation updates:
+1. Bug Fix:
+2. New Feature:
+3. Breaking Change:
+4. This change require documentation updates:
 
 ### How was it solved
 
