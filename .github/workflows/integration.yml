@@ -1,7 +1,6 @@
 name: Build-E2E-Test-Release Next.js Web Application
 on: 
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-UnitTest:
@@ -97,7 +96,6 @@ jobs:
         asset_path: ./site.zip
         asset_name: site-v${{ github.run_number }}.zip
         asset_content_type: application/zip
-        retention-days: 1
   
 
       
